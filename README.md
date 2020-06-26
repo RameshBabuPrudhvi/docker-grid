@@ -1,22 +1,5 @@
-# Docker Reference
+# ## Selenium Grid usign Kubernetes cluster
 
-## Install Jenkins:
-```docker
-docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
-```
-## Start container:
-```docker
-docker container start [container id]
-```
-## Stop / remove all Docker containers
-```docker
-docker stop $(docker ps -a -q)
-docker rm $(docker ps -a -q)
-```
-## Stop / remove all Docker images
-```docker
-docker rmi $(docker images -a -q)
-```
 ## Install chocolatey:
 Open Powershell as Admin and run below command
 ```shell
@@ -27,7 +10,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 choco install minikube
 choco install kubernetes-cli
 minikube start
-minikube dashboard
 ```
 ## Selenium Grid usign Kubernetes
 
@@ -35,6 +17,10 @@ minikube dashboard
 kubectl create -f ./deploy.yml
 kubectl create -f ./service.yml
 kubectl create -f ./rep.yml
+```
+## Use view minikube dashboard
+```docker
+minikube dashboard
 ```
 ## Update deploment changes
 ```docker
@@ -61,3 +47,20 @@ kubectl get pods
 Delete pods :  kubectl delete pods/[pod ID]
 ```
 
+## Install Jenkins:
+```docker
+docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
+```
+## Start container:
+```docker
+docker container start [container id]
+```
+## Stop / remove all Docker containers
+```docker
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+```
+## Stop / remove all Docker images
+```docker
+docker rmi $(docker images -a -q)
+```
