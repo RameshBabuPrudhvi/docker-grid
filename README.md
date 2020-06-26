@@ -11,8 +11,7 @@ choco install minikube
 choco install kubernetes-cli
 minikube start
 ```
-## Selenium Grid usign Kubernetes
-
+## Selenium hub and node deployment
 ```docker
 kubectl create -f ./deploy.yml
 kubectl create -f ./service.yml
