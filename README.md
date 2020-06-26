@@ -1,4 +1,4 @@
-# ## Selenium Grid usign Kubernetes cluster
+# Selenium Grid usign Kubernetes cluster
 
 ## Install chocolatey:
 Open Powershell as Admin and run below command
