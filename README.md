@@ -48,5 +48,6 @@ kubectl rollout history deployment selenium-hub
 ## Get pods and delete pods
 ```docker
 kubectl get pods
+kubernetes pod describe
 Delete pods :  kubectl delete pods/[pod ID]
 ```
