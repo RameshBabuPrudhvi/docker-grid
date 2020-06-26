@@ -40,14 +40,24 @@ kubectl create -f ./rep.yml
 ```docker
 kubectl apply -f ./deploy.yml --record
 ```
-## Other commands
+## Get deploment history
 ```docker
-kubectl rollout status deployment selenium-hub
 kubectl rollout history deployment selenium-hub
 ```
-## Get pods and delete pods
+## Get deploment status
+```docker
+kubectl rollout status deployment selenium-hub
+```
+## Get details about pods 
+```docker
+kubectl describe pod
+```
+## Check pod status
 ```docker
 kubectl get pods
-kubernetes pod describe
+```
+## Delete pod
+```docker
 Delete pods :  kubectl delete pods/[pod ID]
 ```
+
