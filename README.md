@@ -37,8 +37,9 @@ kubectl create -f ./service.yml
 kubectl create -f ./rep.yml
 ```
 ## Update deploment changes
-
+```docker
 kubectl apply -f ./deploy.yml --record
+```
 ## Other commands
 ```docker
 kubectl rollout status deployment selenium-hub
