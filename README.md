@@ -17,7 +17,7 @@ kubectl create -f ./deploy.yml
 kubectl create -f ./service.yml
 kubectl create -f ./rep.yml
 ```
-## Use view minikube dashboard
+## To view minikube dashboard
 ```docker
 minikube dashboard
 ```
